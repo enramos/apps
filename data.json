@@ -1,0 +1,22 @@
+[
+  {
+    "name": "My App",
+    "official_website": "https://myapp.com",
+    "repository": "https://github.com/username/myapp",
+    "license": "MIT",
+    "technology": "React, Node.js",
+    "operating_systems": ["Windows", "macOS", "Linux"],
+    "description": "This is a brief description of My App, which provides various features and functionalities.",
+    "tags": ["productivity", "tools", "opensource"]
+  },
+  {
+    "name": "Another App",
+    "official_website": "https://anotherapp.com",
+    "repository": "https://github.com/username/anotherapp",
+    "license": "GPL-3.0",
+    "technology": "Vue.js, Django",
+    "operating_systems": ["Windows", "Linux"],
+    "description": "Another App is designed to help users manage their tasks efficiently.",
+    "tags": ["task management", "productivity", "opensource"]
+  }
+]
