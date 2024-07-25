@@ -21,8 +21,6 @@ function displayData() {
             <p><strong>Operating Systems:</strong> ${item.operating_systems.join(', ')}</p>
             <p><strong>Description:</strong> ${item.description}</p>
             <p><strong>Tags:</strong> ${item.tags.join(', ')}</p>
-            <button onclick="editItem(${data.indexOf(item)})">Edit</button>
-            <button onclick="deleteItem(${data.indexOf(item)})">Delete</button>
         `;
         appDiv.appendChild(itemDiv);
     });
