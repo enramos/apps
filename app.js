@@ -28,39 +28,6 @@ function displayData() {
     });
 }
 
-function addItem() {
-    const name = prompt('Enter name:');
-    const official_website = prompt('Enter official website:');
-    const repository = prompt('Enter repository:');
-    const license = prompt('Enter license:');
-    const technology = prompt('Enter technology:');
-    const operating_systems = prompt('Enter operating systems (comma-separated):').split(',').map(os => os.trim());
-    const description = prompt('Enter description:');
-    const tags = prompt('Enter tags (comma-separated):').split(',').map(tag => tag.trim());
-    const newItem = { name, official_website, repository, license, technology, operating_systems, description, tags };
-    data.push(newItem);
-    displayData();
-}
-
-function editItem(index) {
-    const item = data[index];
-    const name = prompt('Enter new name:', item.name);
-    const official_website = prompt('Enter new official website:', item.official_website);
-    const repository = prompt('Enter new repository:', item.repository);
-    const license = prompt('Enter new license:', item.license);
-    const technology = prompt('Enter new technology:', item.technology);
-    const operating_systems = prompt('Enter new operating systems (comma-separated):', item.operating_systems.join(',')).split(',').map(os => os.trim());
-    const description = prompt('Enter new description:', item.description);
-    const tags = prompt('Enter new tags (comma-separated):', item.tags.join(',')).split(',').map(tag => tag.trim());
-    data[index] = { name, official_website, repository, license, technology, operating_systems, description, tags };
-    displayData();
-}
-
-function deleteItem(index) {
-    data.splice(index, 1);
-    displayData();
-}
-
 document.getElementById('app').innerHTML = '<button onclick="addItem()">Add Item</button>';
 fetchData();
 
